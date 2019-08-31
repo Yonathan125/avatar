@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulir Pendaftaran</title>
+</head>
+<body>
+    <form action="pendataran.php" method="POST">
+        <fieldset>
+        <legend>Registrasi</legend>
+        <p>
+            <label>Name:</label>
+            <input type="text" name="name"  />
+        </p>
+            <label>No.KTP:</label>
+            <input type="text" name="No.KTP"  />
+        </p>
+		<p>
+            <label>Username:</label>
+            <input type="text" name="Username"  />
+        </p>
+		<p>
+            <label>Password:</label>
+            <input type="text" name="Password"  />
+        </p>
+        
+        <p>
+            <label>Email:</label>
+            <input type="email" name="email"  />
+        </p>
+        <p>
+            <input type="submit" name="submit" value="Registrasi" />
+        </p>
+        </fieldset>
+    </form>
+</body>
+</html>
