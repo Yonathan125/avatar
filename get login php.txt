@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>FORM NILAI</title>
+<body>
+	<?php 
+	$nama =  $_POST["username"];
+	 ?>
+
+Selamat Datang <?php echo $_POST["username"]; ?> <br>
+</body>
+</html>
+
+</head>
+<body>
