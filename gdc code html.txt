@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Donasi</title>
+</head>
+<body>
+    <form action="donasi.php" method="POST">
+        <fieldset>
+		<legend>DONASI</legend> 
+        <p>
+            <label>Nama:</label>
+            <label>Panti Asuhan Avatar</label> 
+        </p>
+		 <p>
+            <label>No.Rekening</label>
+            <label>008301109794508</label> 
+        </p>
+			 <p>
+            <label>No.Rekening</label>
+            <label>008301109794508</label> 
+        </p>
+			 <p>
+            <label>Jika sudah mendonasikan untuk anak anak panti asuhan kami harap memberitahukan di 081325274142</label> 
+        </p>
+   </form>
+</body>
+</html>
