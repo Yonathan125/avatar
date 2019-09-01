@@ -2,32 +2,14 @@
 <head>
 <div class='header' src="header2.jpg" align='center'></div>
 <style>
-.footer{
-position: relative;
-margin: auto;
-padding:35px;
-overflow: hidden;
-background:url(footer.jpg) no-repeat center center;
-width:1000px;
-height: 50px;
-}
-.header2{
-position: relative;
-margin: auto;
-padding:35px;
-overflow: hidden;
-background:url(headeradopt.jpg) no-repeat center center;
-width:940px;
-height: 148px;
-}
 .header{
 position: relative;
 margin: auto;
 padding:35px;
 overflow: hidden;
 background:url(header2.jpg) no-repeat center center;
-width:940px;
-height: 148px;
+width:975px;
+height: 280px;
 }
 .login-container {
   float: right;
@@ -79,6 +61,15 @@ font-family: Calibri;
  }
  * {
   box-sizing: border-box;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.row { 
+  display: flex;
+  flex-wrap: wrap;
 }
 .dropdown {
   float: left;
@@ -133,53 +124,24 @@ font-family: Calibri;
 }
 </style>
 <div class='topnav'>
-  <a class='active' href='avatar1.html'><img alt='Avatar' class='home' src='logo.jpg'>
+  <a class='active' href='avatar2.html'><img alt='Avatar' class='home' src='logo.jpg'>
   </img></a>
-    <a href='apa1.php'><img alt='Avatar' class='avatar' src='adopt.jpg'/> Adopt</a>
-  <a href='donate.html'><img alt='Avatar' class='avatar' src='Untitled-5-Recovered.jpg'/>Donate</a>
+    <a href='apa2.php'><img alt='Avatar' class='avatar' src='adopt.jpg'/> Adopt</a>
   <div class='login-container'>
-  <a href='aboutus.html'>ABOUT US</a>
-  <a href='contactus.html'>CONTACT US</a>
+  <a href='login.html'>Login</a>
   </div>
 </div>
 <br>
-<div class='header2' src="headeradopt.jpg" align='center'></div>
 <br>
-<?php
-include "apa.php";
-$query = mysqli_query($connection,"SELECT * FROM rsh_admin ");
-?>
-<form action="" method="post">
-    <table  align='center' border="1" cellpadding="0" cellspacing="0">
-        <tr>
-            <th>No</th>
-			<th>Gambar</th>
-            <th>Nama</th>
-            <th>Alamat</th>
-            <th>Tempat Tanggal Lahir</th>
-			<th>Keterangan</th>
-        </tr>
-        <?php if(mysqli_num_rows($query)>0){ ?>
-        <?php
-            $no = 1;
-            while($data = mysqli_fetch_array($query)){
-        ?>
-        <tr>
-            <td><?php echo $no ?></td>
-			<td><?php echo $data["File"] ?></td>
-            <td><?php echo $data["Nama"];?></td>
-             <td><?php echo $data["Alamat"];?></td>
-             <td><?php echo $data["Tempat_Tanggal_Lahir"];?></td>
-			 <td><?php echo $data["Keterangan"];?></td>
-        </tr>
-        <?php $no++; } ?>
-        <?php } ?>
-    </table>
-</form>
+<br>
+<br>
+<h1 align='center'> SELAMAT DATANG DI HALAMAN INTERNAL AVATAR</H1>
+<br>
+<h2 align='center'>Terima Kasih<h2>
 </head>
+<body bgcolor='#4caf50'>
 <div class='footer' src="footer.jpg" align='center'></div>
-<body>
 </body>
 </html>
 
-           
+    

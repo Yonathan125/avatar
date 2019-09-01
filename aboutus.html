@@ -11,15 +11,6 @@ background:url(footer.jpg) no-repeat center center;
 width:1000px;
 height: 50px;
 }
-.header2{
-position: relative;
-margin: auto;
-padding:35px;
-overflow: hidden;
-background:url(headeradopt.jpg) no-repeat center center;
-width:940px;
-height: 148px;
-}
 .header{
 position: relative;
 margin: auto;
@@ -143,42 +134,59 @@ font-family: Calibri;
   </div>
 </div>
 <br>
-<div class='header2' src="headeradopt.jpg" align='center'></div>
 <br>
-<?php
-include "apa.php";
-$query = mysqli_query($connection,"SELECT * FROM rsh_admin ");
-?>
-<form action="" method="post">
-    <table  align='center' border="1" cellpadding="0" cellspacing="0">
-        <tr>
-            <th>No</th>
-			<th>Gambar</th>
-            <th>Nama</th>
-            <th>Alamat</th>
-            <th>Tempat Tanggal Lahir</th>
-			<th>Keterangan</th>
-        </tr>
-        <?php if(mysqli_num_rows($query)>0){ ?>
-        <?php
-            $no = 1;
-            while($data = mysqli_fetch_array($query)){
-        ?>
-        <tr>
-            <td><?php echo $no ?></td>
-			<td><?php echo $data["File"] ?></td>
-            <td><?php echo $data["Nama"];?></td>
-             <td><?php echo $data["Alamat"];?></td>
-             <td><?php echo $data["Tempat_Tanggal_Lahir"];?></td>
-			 <td><?php echo $data["Keterangan"];?></td>
-        </tr>
-        <?php $no++; } ?>
-        <?php } ?>
-    </table>
-</form>
+
 </head>
-<div class='footer' src="footer.jpg" align='center'></div>
 <body>
+        <fieldset>
+		<font size="30" color="lime"><center><b><legend><marquee>ABOUT US</marquee></legend>
+        </b></center></font>
+        <p>
+        <font size="6"><justify><u><legend>  Kami mahasiswa unika soegijapranata membuat sebuah web AA (Adopsi Anak). Tujuan kami membuat web ini adalah untuk membantu anak anak yang kurang beruntung dan kami membuat web ini dengan bekerja sama bersama salah satu panti asuhan. Pihak dalam pembuatan web ini :  </legend></u></justify></font>
+    </p>
+        <br>
+
+
+        <p>
+            <label>Nama:</label>
+            <label>Bernadus Osan Regi P.S. </label> 
+            <br>
+            <label>NIM:</label>
+            <label>18.N1.0007</label> 
+        </p>
+		 <p>
+            <label>Nama:</label>
+            <label>Yonathan Aditya Wijaya </label> 
+            <br>
+            <label>NIM:</label>
+            <label>18.N1.0012</label> 
+        </p>
+        <p>
+            <label>Nama:</label>
+            <label>Christian Advent Grace </label> 
+            <br>
+            <label>NIM:</label>
+            <label>18.N1.0016</label> 
+        </p>
+        <p>
+            <label>Nama:</label>
+            <label>Zefi Philia Maxdiel</label> 
+            <br>
+            <label>NIM:</label>
+            <label>18.N1.0028</label> 
+        </p>
+        <p>
+            <label>Nama:</label>
+            <label>Anggoro Bagus Dewaji</label> 
+            <br>
+            <label>NIM:</label>
+            <label>18.N3.0014</label> 
+        </p>
+        <label> Dan pihak pihak lainnya yang tidak bisa kami sebutkan satu per satu </label>
+        </p>
+   </form>
+   </fieldset>
+    <div class='footer' src="footer.jpg" align='center'></div>
 </body>
 </html>
 

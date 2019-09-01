@@ -4,7 +4,7 @@
  */
 
 $databaseHost = 'localhost';
-$databaseName = 'crud_db';
+$databaseName = 'Data_Anak';
 $databaseUsername = 'root';
 $databasePassword = '';
 

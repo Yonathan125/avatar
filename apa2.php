@@ -2,32 +2,14 @@
 <head>
 <div class='header' src="header2.jpg" align='center'></div>
 <style>
-.footer{
-position: relative;
-margin: auto;
-padding:35px;
-overflow: hidden;
-background:url(footer.jpg) no-repeat center center;
-width:1000px;
-height: 50px;
-}
-.header2{
-position: relative;
-margin: auto;
-padding:35px;
-overflow: hidden;
-background:url(headeradopt.jpg) no-repeat center center;
-width:940px;
-height: 148px;
-}
 .header{
 position: relative;
 margin: auto;
 padding:35px;
 overflow: hidden;
 background:url(header2.jpg) no-repeat center center;
-width:940px;
-height: 148px;
+width:975px;
+height: 280px;
 }
 .login-container {
   float: right;
@@ -79,6 +61,15 @@ font-family: Calibri;
  }
  * {
   box-sizing: border-box;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.row { 
+  display: flex;
+  flex-wrap: wrap;
 }
 .dropdown {
   float: left;
@@ -133,17 +124,15 @@ font-family: Calibri;
 }
 </style>
 <div class='topnav'>
-  <a class='active' href='avatar1.html'><img alt='Avatar' class='home' src='logo.jpg'>
+  <a class='active' href='avatar2.html'><img alt='Avatar' class='home' src='logo.jpg'>
   </img></a>
     <a href='apa1.php'><img alt='Avatar' class='avatar' src='adopt.jpg'/> Adopt</a>
   <a href='donate.html'><img alt='Avatar' class='avatar' src='Untitled-5-Recovered.jpg'/>Donate</a>
   <div class='login-container'>
-  <a href='aboutus.html'>ABOUT US</a>
-  <a href='contactus.html'>CONTACT US</a>
+  <a href='login.html'>Login</a>
   </div>
 </div>
 <br>
-<div class='header2' src="headeradopt.jpg" align='center'></div>
 <br>
 <?php
 include "apa.php";
@@ -177,9 +166,7 @@ $query = mysqli_query($connection,"SELECT * FROM rsh_admin ");
     </table>
 </form>
 </head>
-<div class='footer' src="footer.jpg" align='center'></div>
 <body>
 </body>
 </html>
-
-           
+    

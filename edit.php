@@ -43,7 +43,9 @@ while($user_data = mysqli_fetch_array($result))
     <a href="index.php">Home</a>
     <br/><br/>
 
-    <form name="update_user" method="post" action="edit.php">
+    <form name="update_user" method="post" action="edit.php" enctype="multipart/form-data">
+		<input type="file" name="foto">
+		
         <table border="0">
             <tr> 
                 <td>No</td>

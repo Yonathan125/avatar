@@ -1,15 +1,27 @@
 <html>
-<head>
+<head >
 <div class='header' src="header2.jpg" align='center'></div>
 <style>
+.footer{
+position: relative;
+margin: auto;
+padding:35px;
+overflow: hidden;
+background:url(footer.jpg) no-repeat center center;
+width:1000px;
+height: 50px;
+}
+body { 
+background-color : #4caf50;
+}
 .header{
 position: relative;
 margin: auto;
 padding:35px;
 overflow: hidden;
 background:url(header2.jpg) no-repeat center center;
-width:975px;
-height: 280px;
+width:940px;
+height: 148px;
 }
 .login-container {
   float: right;
@@ -62,14 +74,66 @@ font-family: Calibri;
  * {
   box-sizing: border-box;
 }
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px; 
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #4CAF50;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 </style>
 <div class='topnav'>
-  <a class='active' href='avatar1.html'><img alt='Avatar' class='home' src='logo.jpg'>
+  <a class='active' href='#home'><img alt='Avatar' class='home' src='logo.jpg'>
   </img></a>
-    <a href='adopt.html'><img alt='Avatar' class='avatar' src='adopt.jpg'/> Adopt</a>
-  <a href='coming.html'><img alt='Avatar' class='avatar' src='Untitled-5-Recovered.jpg'/>Donate</a>
+    <a href='apa1.php'><img alt='Avatar' class='avatar' src='adopt.jpg'/> Adopt</a>
+  <a href='donate.html'><img alt='Avatar' class='avatar' src='Untitled-5-Recovered.jpg'/>Donate</a>
   <div class='login-container'>
-  <a href='gallery.html'>Hubungi Kami</a>
+  <a href='aboutus.html'>ABOUT US</a>
+   <a href='contactus.html'>CONTACT US</a>
   </div>
 </div>
 <br>
@@ -78,6 +142,7 @@ font-family: Calibri;
 <br>
 <h2 align='center'>TERIMA KASIH TELAH BERKUNJUNG<h2>
 </head>
-<body>
+<body bgcolor='#4caf50'>
+<div class='footer' src="footer.jpg" align='center'></div>
 </body>
 </html>

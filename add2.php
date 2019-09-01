@@ -4,7 +4,7 @@
 </head>
 
 <body>
-    <a href="login.html">Go to Home</a>
+    <a href="login.php">Go to Home</a>
     <br/><br/>
 
     <form action="add.php" method="post" name="form1" enctype="multipart/form-data">
@@ -62,7 +62,7 @@
 
         // Show message when user added
 		if($result)
-			echo " List sudah ditambahkan <a href='apa1.php'>Lihat Hasil</a>";
+			echo "User added successfully. <a href='apa2.php'>View Users</a>";
 		else
 			echo $result;
     }

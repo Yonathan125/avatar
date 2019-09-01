@@ -11,15 +11,6 @@ background:url(footer.jpg) no-repeat center center;
 width:1000px;
 height: 50px;
 }
-.header2{
-position: relative;
-margin: auto;
-padding:35px;
-overflow: hidden;
-background:url(headeradopt.jpg) no-repeat center center;
-width:940px;
-height: 148px;
-}
 .header{
 position: relative;
 margin: auto;
@@ -143,42 +134,47 @@ font-family: Calibri;
   </div>
 </div>
 <br>
-<div class='header2' src="headeradopt.jpg" align='center'></div>
 <br>
-<?php
-include "apa.php";
-$query = mysqli_query($connection,"SELECT * FROM rsh_admin ");
-?>
-<form action="" method="post">
-    <table  align='center' border="1" cellpadding="0" cellspacing="0">
-        <tr>
-            <th>No</th>
-			<th>Gambar</th>
-            <th>Nama</th>
-            <th>Alamat</th>
-            <th>Tempat Tanggal Lahir</th>
-			<th>Keterangan</th>
-        </tr>
-        <?php if(mysqli_num_rows($query)>0){ ?>
-        <?php
-            $no = 1;
-            while($data = mysqli_fetch_array($query)){
-        ?>
-        <tr>
-            <td><?php echo $no ?></td>
-			<td><?php echo $data["File"] ?></td>
-            <td><?php echo $data["Nama"];?></td>
-             <td><?php echo $data["Alamat"];?></td>
-             <td><?php echo $data["Tempat_Tanggal_Lahir"];?></td>
-			 <td><?php echo $data["Keterangan"];?></td>
-        </tr>
-        <?php $no++; } ?>
-        <?php } ?>
-    </table>
-</form>
+
 </head>
-<div class='footer' src="footer.jpg" align='center'></div>
 <body>
+        <fieldset>
+		<font size="30" color="lime"><center><b><legend><marquee>Contact</marquee></legend>
+        </b></center></font>
+        <p>
+        <font size="6"><justify><u><legend>Bila ingin memberikan sedikit kebahagiaan kepada anak anak kami  dan apabila ada kritik dan saran dapat menhubungi kami </legend></u></justify></font>
+    </p>
+        <br>
+        <p>
+            <font size="5"><label>Facebook:</label>
+            <label>Osan pratama </label> 
+            </font>
+            <br>
+        </p>
+
+		 <p><font size="5">
+            <label>Twitter</label>
+            <label>HADES</label>
+            </font>
+            <br> 
+        
+        </p>
+
+        <p>
+            <font size="5">
+            <label>instagram:</label>
+            <label> zefimaxdiel / kalious09 / vermo3uth </label>  
+        </p>
+    </font>
+         <p>
+            <font size="5">
+            <label>No.HP</label>
+            <label> 083838205682 </label>  
+        </p>
+    </font>
+   
+   </form>
+    <div class='footer' src="footer.jpg" align='center'></div>
 </body>
 </html>
 

@@ -1,33 +1,16 @@
+<!DOCTYPE html>
 <html>
 <head>
 <div class='header' src="header2.jpg" align='center'></div>
 <style>
-.footer{
-position: relative;
-margin: auto;
-padding:35px;
-overflow: hidden;
-background:url(footer.jpg) no-repeat center center;
-width:1000px;
-height: 50px;
-}
-.header2{
-position: relative;
-margin: auto;
-padding:35px;
-overflow: hidden;
-background:url(headeradopt.jpg) no-repeat center center;
-width:940px;
-height: 148px;
-}
 .header{
 position: relative;
 margin: auto;
 padding:35px;
 overflow: hidden;
 background:url(header2.jpg) no-repeat center center;
-width:940px;
-height: 148px;
+width:975px;
+height: 280px;
 }
 .login-container {
   float: right;
@@ -138,48 +121,41 @@ font-family: Calibri;
     <a href='apa1.php'><img alt='Avatar' class='avatar' src='adopt.jpg'/> Adopt</a>
   <a href='donate.html'><img alt='Avatar' class='avatar' src='Untitled-5-Recovered.jpg'/>Donate</a>
   <div class='login-container'>
-  <a href='aboutus.html'>ABOUT US</a>
-  <a href='contactus.html'>CONTACT US</a>
+   <div class="dropdown">
+    <button class="dropbtn">Hubungi Kami
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">0856789108</a>
+      <a href="#">0812364527</a>
+      <a href="#">0819223734</a>
+    </div>
+  </div> 
+  <a href='add2.php'>input</a>
+  <a href='login.html'>Login</a>
   </div>
 </div>
 <br>
-<div class='header2' src="headeradopt.jpg" align='center'></div>
 <br>
-<?php
-include "apa.php";
-$query = mysqli_query($connection,"SELECT * FROM rsh_admin ");
-?>
-<form action="" method="post">
-    <table  align='center' border="1" cellpadding="0" cellspacing="0">
-        <tr>
-            <th>No</th>
-			<th>Gambar</th>
-            <th>Nama</th>
-            <th>Alamat</th>
-            <th>Tempat Tanggal Lahir</th>
-			<th>Keterangan</th>
-        </tr>
-        <?php if(mysqli_num_rows($query)>0){ ?>
-        <?php
-            $no = 1;
-            while($data = mysqli_fetch_array($query)){
-        ?>
-        <tr>
-            <td><?php echo $no ?></td>
-			<td><?php echo $data["File"] ?></td>
-            <td><?php echo $data["Nama"];?></td>
-             <td><?php echo $data["Alamat"];?></td>
-             <td><?php echo $data["Tempat_Tanggal_Lahir"];?></td>
-			 <td><?php echo $data["Keterangan"];?></td>
-        </tr>
-        <?php $no++; } ?>
-        <?php } ?>
-    </table>
-</form>
+<meta charset="UTF-8">
+	<title>FORM Login</title>
+	</head>
 </head>
-<div class='footer' src="footer.jpg" align='center'></div>
 <body>
+	<?php 
+	$nama =  $_POST["username"];
+	 ?>
+
+Selamat Datang <?php echo $_POST["username"]; ?> <br>
 </body>
 </html>
 
-           
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>FORM Login</title>
+	</head>
+<body>
+
+
+

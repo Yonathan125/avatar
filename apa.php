@@ -2,7 +2,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "apa";
+$dbname = "Data_Anak";
 
 $connection = mysqli_connect($servername, $username, $password, $dbname);
 if (!$connection){
